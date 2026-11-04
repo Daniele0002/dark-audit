@@ -18,3 +18,17 @@
 /public/assets/
 /assets/vendor/
 ###< symfony/asset-mapper ###
+
+# Operating system
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.idea/
+
+# Logs
+*.log
+
+/.env
+/.env.dev

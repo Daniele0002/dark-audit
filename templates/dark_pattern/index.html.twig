@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dark Audit - Patterns{% endblock %}
+
+{% block body %}
+
+    <h1>Dark Pattern Scanner</h1>
+
+    {% for pattern in patterns %}
+        <h2>{{ pattern.name }}</h2>
+        <p>{{ pattern.description }}</p>
+    {% else %}
+        <p>Nessun Dark Pattern presente nel database.</p>
+    {% endfor %}
+
+{% endblock %}
