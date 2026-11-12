@@ -34,9 +34,11 @@ class Scan
     private Collection $scanResults;
 
     public function __construct()
-    {
-        $this->scanResults = new ArrayCollection();
-    }
+{
+    $this->scanResults = new ArrayCollection();
+    $this->status = 'pending';
+    $this->startedAt = new \DateTimeImmutable();
+}
 
     public function getId(): ?int
     {
